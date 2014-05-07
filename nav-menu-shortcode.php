@@ -1,13 +1,15 @@
 <?php
 /*
 Plugin Name: Nav Menu Shortcode
+Plugin Group: Shortcodes
+Plugin URI: http://phplug.in/
+Description: Show a menu with a shortcode. Example: <code>[navmenu menu="Your Menu Name"]</code>
 Version: 0.2.1
-Description: Show a menu with a shortcode.
 Author: Eric King
-Author URI: http://webdeveric.com
+Author URI: http://webdeveric.com/
 */
 
-function nav_menu_shortcode($atts, $content = null, $code = '')
+function wde_nav_menu_shortcode($atts, $content = null, $code = '')
 {
     $defaults = array(
         'theme_location' => null,
@@ -30,5 +32,4 @@ function nav_menu_shortcode($atts, $content = null, $code = '')
 
     return wp_nav_menu($atts);
 }
-
-add_shortcode('navmenu', 'nav_menu_shortcode');
+add_shortcode('navmenu', 'wde_nav_menu_shortcode');
