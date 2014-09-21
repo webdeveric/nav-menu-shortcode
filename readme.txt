@@ -2,7 +2,7 @@
 Contributors: webdeveric
 Tags: navigation, menu, shortcode
 Requires at least: 3.0.0
-Tested up to: 3.9
+Tested up to: 4.0.0
 Stable tag: 0.2.1
 
 Show a menu with a shortcode. Example: `[navmenu menu="Your Menu Name"]`
